@@ -41,3 +41,6 @@ kubectl expose deployment k8s-web-hello --type=NodePort --port=3000
 minikube ip
 minikube service k8s-web-hello
 minikube service k8s-web-hello --url
+
+11) LoadBalancer Service
+kubectl expose deployment k8s-web-hello --type=LoadBalancer --port=3000
