@@ -33,3 +33,11 @@ kubectl get pods -o wide
 2 create Deployment
 3 scale Deploymetn
 4 create Service
+
+
+10) Create NodePort Service
+kubectl expose deployment k8s-web-hello --type=NodePort --port=3000
+
+minikube ip
+minikube service k8s-web-hello
+minikube service k8s-web-hello --url
