@@ -1,0 +1,35 @@
+1) Watch list of Services
+kubectl get services
+kubectl get svc
+
+2) Watch list of Pods
+kubectl get pods
+
+3)Go into cluster
+minikube ssh
+
+4) Get details of service
+kubectl describe service nginx-deployment
+
+5) delete
+kubectl delete deployment nginx-deployment
+kubectl delete service nginx-deployment
+
+6) Create deployment
+kubectl create deployment k8s-web-hello --image=panaram1ks/k8s-web-hello
+
+7) Expose ports
+kubectl expose deployment k8s-web-hello  --port=3000
+
+8) Scaling custom image deployment
+kubectl scale deployment k8s-web-hello --replicas=4
+
+9) get ports address
+kubectl get pods -o wide
+
+
+0 alias k="kubectl"
+1 create Pod
+2 create Deployment
+3 scale Deploymetn
+4 create Service
