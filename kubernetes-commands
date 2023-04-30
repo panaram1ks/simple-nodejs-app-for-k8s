@@ -44,3 +44,25 @@ minikube service k8s-web-hello --url
 
 11) LoadBalancer Service
 kubectl expose deployment k8s-web-hello --type=LoadBalancer --port=3000
+
+
+
+Build docker image with changes V2
+docker build . -t panaram1ks/k8s-web-hello:2.0.0
+
+Push image to DockerHub
+docker push panaram1ks/k8s-web-hello:2.0.0
+
+12) Deploy new image to Pod
+kubectl set image deployment k8s-web-hello k8s-web-hello=panaram1ks/k8s-web-hello:2.0.0
+
+Check status of updates
+kubectl rollout status deploy k8s-web-hello
+
+13) Open connection
+minikube service k8s-web-hello
+
+k delete pod k8s-web-hello-54b57b6665-bqtcw
+
+14) Dashboard minikube
+minikube dashboard
