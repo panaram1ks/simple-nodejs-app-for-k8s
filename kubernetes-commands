@@ -66,3 +66,10 @@ k delete pod k8s-web-hello-54b57b6665-bqtcw
 
 14) show Dashboard minikube
 minikube dashboard
+
+
+kubectl delete deployment
+kubectl delete services
+ 
+Short wersion
+kubectl delete all --all
