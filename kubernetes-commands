@@ -90,4 +90,15 @@ service docker stop
 rm ~/.docker/config.json
 service docker start
 
+17) Deploy everything just one command
+kubectl apply -f nginx.yaml -f k8s-web-to-nginx.yaml
+
+k get svc
+k get deploy
+k get pods
+minikube service k8s-web-to-nginx
+
+k exec k8s-web-to-nginx-57694c9b47-jrkxd -- nslookup nginx
+k exec k8s-web-to-nginx-57694c9b47-jrkxd -- wget -qO- http://nginx
+
 

@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/nginx", async (req, res) => {
+    //name - nginx is important as it use in yaml configuration for connection by the name
     const url = 'http://nginx'
     const response = await fetch(url);
     const body = await response.text();
