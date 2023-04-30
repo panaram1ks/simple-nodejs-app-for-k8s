@@ -83,3 +83,11 @@ kubectl apply -f service.yaml
 docker build . -t panaram1ks/k8s-web-to-nginx
 - Send buided image to DockerHub
 docker push panaram1ks/k8s-web-to-nginx
+
+Problem with docker push credentinals
+Solve:
+service docker stop
+rm ~/.docker/config.json
+service docker start
+
+
