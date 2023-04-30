@@ -64,5 +64,5 @@ minikube service k8s-web-hello
 
 k delete pod k8s-web-hello-54b57b6665-bqtcw
 
-14) Dashboard minikube
+14) show Dashboard minikube
 minikube dashboard
