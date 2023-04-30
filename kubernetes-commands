@@ -78,3 +78,8 @@ kubectl delete all --all
 15) Use YAML file to start deployment and service
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
+
+16) create second image for interaction
+docker build . -t panaram1ks/k8s-web-to-nginx
+- Send buided image to DockerHub
+docker push panaram1ks/k8s-web-to-nginx
