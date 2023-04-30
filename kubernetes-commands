@@ -73,3 +73,7 @@ kubectl delete services
  
 Short wersion
 kubectl delete all --all
+
+
+15) Use YAML file to start deployment
+kubectl apply -f deployment.yaml
