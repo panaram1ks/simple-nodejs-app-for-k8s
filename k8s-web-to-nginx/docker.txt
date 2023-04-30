@@ -1,0 +1,10 @@
+docker build . -t panaram1ks/k8s-web-hello
+
+docker images | grep k8s
+
+docker login
+
+docker push panaram1ks/k8s-web-hello
+
+kubectl get deployments
+kubectl get svc
