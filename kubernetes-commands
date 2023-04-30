@@ -101,4 +101,7 @@ minikube service k8s-web-to-nginx
 k exec k8s-web-to-nginx-57694c9b47-jrkxd -- nslookup nginx
 k exec k8s-web-to-nginx-57694c9b47-jrkxd -- wget -qO- http://nginx
 
+18) Delete all created services and deployments
+kubectl delete -f nginx.yaml -f k8s-web-to-nginx.yaml
+
 
