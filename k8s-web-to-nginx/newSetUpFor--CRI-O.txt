@@ -1,0 +1,13 @@
+1)
+minikube status
+minikube stop
+minikube delete
+
+2) Create cluster again
+minikube start --driver=virtualbox --container-runtime=cri-o
+minikube status
+minikube ip
+minikube ssh
+
+Check that we use CRI-O containers
+sudo crictl ps
